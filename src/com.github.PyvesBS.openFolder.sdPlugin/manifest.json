@@ -1,0 +1,62 @@
+{
+	"SDKVersion": 2,
+	"Author": "PyvesBS",
+	"CodePath": "app.html",
+	"Description": "A Plugin for the Elgato Stream Deck for opening folders, including UNC paths and Windows hidden shares, which doesn't work with the default System > Open Streamdeck action.",
+	"Name": "Stream Deck Open folder",
+	"Icon": "actions/template/assets/action",
+	"URL": "https://github.com/PyvesBS/streamdeck-openFolder",
+	"Version": "1.0.2",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "John Peeve",
+	"CategoryIcon": "actions/template/assets/actionimage",
+	"Actions": [
+		{
+			"Icon": "actions/template/assets/actionimage",
+			"Name": "Open folder",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "actions/template/assets/action"
+				}
+			],
+			"Tooltip": "This is an example tooltip",
+			"UUID": "com.github.PyvesBS.openFolder.sdPlugin.key",
+			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+		},		
+		{
+			"Icon": "actions/template/assets/actionimage2",
+			"Name": "Open folders",
+			"Controllers": ["Encoder"],
+			"Encoder": {
+				"layout": "$A1",
+				"TriggerDescription": {
+					"Rotate": "Describe the rotation",
+					"Push": "Describe the encoder push",
+					"Touch": "Describe the touch",
+					"LongTouch": "Describe the long touch"
+				}
+			},
+			"States": [
+				{
+					"Image": "actions/template/assets/action2"
+				}
+			],
+			"Tooltip": "This is an example tooltip",
+			"UUID": "com.github.PyvesBS.openFolder.sdPlugin.encoder",
+			"PropertyInspectorPath": "actions/template/property-inspector/inspector2.html"
+		}
+	]
+}
